@@ -1,0 +1,1213 @@
+﻿
+@{
+    ViewBag.Title = "form";
+    Layout = "~/Views/Shared/_myLayout01.cshtml";
+}
+
+<!--about-part start-->
+<section class="about-part service-part">
+    <div class="container">
+        <div class="about-part-details text-center">
+            <h2>service</h2>
+            <div class="about-part-content">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">home</a><span>/</span></li>
+                            <li><a href="service.html">service</a></li>
+                        </ol><!--/.breadcrumb-->
+                    </div><!--/.container-->
+                </div><!--/.breadcrumbs-->
+            </div><!--/.about-part-content-->
+        </div><!--/.about-part-details-->
+    </div><!--/.container-->
+
+</section><!--/.about-part-->
+<!--about-part end-->
+<!--service start-->
+<section class="service">
+    <div class="container">
+        <div class="service-details">
+            <div class="container">
+                <div class="row margin-bottom-l margin-bottom-sm-xl margin-top-xxl margin-top-sm-4xl">
+                    <div class="col-xs-12">
+                        <div class="tabbed-navigation section">
+                            <ul class="nav-switch text-center nav-tabs nav">
+                                <li class="active nav-item" style="margin-bottom:15px;">
+                                    <!-- Warning: bootstrap 4.x '.active' class name will add to the <a> element. -->
+                                    <a href="#claims" data-toggle="tab" aria-expanded="false" style="display:inline-block; text-transform: capitalize;" class="active nav-link h5 p3">
+                                        <span>Điều  chỉnh thông tin hợp đồng bảo hiểm</span>
+                                    </a>
+                                </li>
+                                <li class=" nav-item" style="margin-bottom:15px;">
+                                    <!-- Warning: bootstrap 4.x '.active' class name will add to the <a> element. -->
+                                    <a href="#homeloan" data-toggle="tab" aria-expanded="false" style="display:inline-block; text-transform: capitalize;" class=" nav-link h5 p3">
+                                        <span>Thanh toán quyền lợi hợp đồng bảo hiểm</span>
+                                    </a>
+                                </li>
+                                <li class=" nav-item" style="margin-bottom:15px;">
+                                    <!-- Warning: bootstrap 4.x '.active' class name will add to the <a> element. -->
+                                    <a href="#requests" data-toggle="tab" aria-expanded="false" style="display:inline-block; text-transform: capitalize;" class=" nav-link h5 p3">
+                                        <span>Yêu cầu giải quyết quyền lợi bảo hiểm</span>
+                                    </a>
+                                </li>
+                                <li class=" nav-item" style="margin-bottom:15px;">
+                                    <!-- Warning: bootstrap 4.x '.active' class name will add to the <a> element. -->
+                                    <a href="#requestform" data-toggle="tab" aria-expanded="false" style="display:inline-block; text-transform: capitalize;" class=" nav-link h5 p3">
+                                        <span>Mẫu Hồ Sơ Yêu Cầu Bảo Hiểm</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <script type="text/javascript">
+                                $(function() {
+                                    var hashId=window.location.hash;
+                                    if(hashId.length>0){
+                                        $(".nav-switch a[href='"+encodeURIComponent(hashId)+"']").trigger("click");
+                                        $('html,body').animate({
+                                            scrollTop: 0
+                                        }, 'fast');
+                                    }
+                                });
+                            </script>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="tab-content">
+
+
+                    <div id="claims" data-id="cards" class="row tab-pane fade in card-row margin-bottom-xxl active ">
+                        <div class="grid-control-1-col section">
+                            <div class="row ">
+                                <div class="col col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0 ">
+                                    <div>
+                                        <div class="text parbase section">
+
+
+                                            <div class="aia-text  text-left p4 bt3 margin-top-md-l margin-bottom-md-m margin-top-sm-l margin-bottom-sm-l margin-top-m margin-bottom-l" data-emptytext="Text">
+                                                <p style="text-align: justify;">Khi có yêu cầu điều chỉnh/thay đổi các thông tin liên quan đến hợp đồng bảo hiểm, Quý khách có thể chọn một trong những phương thức dưới đây:</p>
+                                                <ol>
+                                                    <li style="text-align: justify;"><b>Gửi yêu cầu trực tuyến</b>: thông qua <b><i><a href="/vi/MyAIA.html">MyAIA - Bảo hiểm của tôi</a>&nbsp;</i></b>(đối với những khách hàng đã đăng ký thực hiện giao dịch điện tử của AIA Việt Nam)</li>
+                                                    <li style="text-align: justify;">
+                                                        <b>Chọn mẫu biểu phù hợp</b> tại mục Mẫu biểu, điền đầy đủ thông tin và gửi về AIA Việt Nam bằng cách:
+                                                        <ul>
+                                                            <li style="text-align: justify;">Thông qua đại lý phục vụ hợp đồng bảo hiểm của Quý khách; hoặc</li>
+                                                            <li style="text-align: justify;">Nộp trực tiếp tại bất kỳ Văn phòng nào của AIA Việt Nam tại các tỉnh/thành trên cả nước; hoặc</li>
+                                                            <li style="text-align: justify;">Gửi thư về: AIA Việt Nam - Trung Tâm Xử Lý Nghiệp Vụ - Tầng trệt,&nbsp; Tòa nhà Thủy Lợi 4,&nbsp; 205 Nguyễn Xí, Phường 26, Quận Bình Thạnh, TP.HCM.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                                <p style="text-align: justify;">Quý khách cũng có thể liên hệ với AIA Việt Nam theo số điện thoại 028 3812 2777, hoặc email: vn.customer@aia.com để được hướng dẫn chi tiết.</p>
+
+
+
+
+
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row margin-top-md-3xl margin-top-sm-3xl margin-top-3xl">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/updated_21august2019/POS01 - 20082019 - V2- PYC Dieu chinh thong tin Khach hang.pdf" target="_blank">Yêu cầu&nbsp;điều chỉnh thông tin&nbsp;liên lạc,&nbsp;thông tin nhân thân và cập nhật /thay đổi chữ ký</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/updated-june2021/POS10_Phieu-dang-ky-dv-giao--dich-dien-tu_202106.pdf" target="_blank">Đăng ký Dịch vụ giao dịch điện tử</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a target="_blank">Yêu cầu điều chỉnh hợp đồng bảo hiểm của sản phẩm liên kết đầu tư</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <ul>
+                                                                    <li style="text-align: justify;"><a href="/content/dam/vn/vi/form-library/update_oct_2021/ILP01_ILP2_PYC_Dieu_chinh_noi_dung_H%C4%90BH_202110_v2.pdf">Dành cho sản phẩm SmartWEALTH – Bảo Hiểm Liên Kết Đơn Vị / Optima – Bảo Hiểm Liên Kết Đơn Vị dành cho Doanh Nghiệp</a></li>
+                                                                </ul>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <ul>
+                                                                    <li style="text-align: justify;"><a href="/content/dam/vn/vi/form-library/update_oct_2021/ILP03_PYC_Dieu_chinh_noi_dung_H%C4%90BH_202110_v2.pdf">Dành cho sản phẩm Bước Đến Tương Lai / Đầu Tư Thịnh Vượng</a></li>
+                                                                </ul>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <ul>
+                                                                    <li><a href="/content/dam/vn/vi/form-library/updated_april2021/Bang_khao-sat-muc-do-chap-nhan-rui-ro-trong-dau-tu.pdf">Bảng khảo sát mức độ chấp nhận rủi ro trong đầu tư</a></li>
+                                                                </ul>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/updated-june2021/POS02_PYC_Dieu-chinh-noi-dung-HDBH-202105-CHR2.0.pdf" target="_blank">Yêu cầu thay đổi nội dung hợp đồng bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/updated-june2021/POS04_PYC-Khoi-phuc-hieu-luc-HD_v1_042019.pdf">Khôi phục hiệu lực hợp đồng/sản phẩm bổ sung mới mất hiệu lực TRONG VÒNG&nbsp;4 tháng</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/updated-june2021/POS04_PYC-Khoi-phuc-hieu-luc-HD_tren-4-thang_v1_042019.pdf">Khôi phục hiệu lực hợp đồng/sản phẩm bổ sung đã mất hiệu lực TRÊN 4 tháng</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/update_oct_2021/Phieu_yeu_cau_thay_doi_Ben_ben_mua_bao_hiem_Oct2021.pdf">Yêu cầu thay đổi Bên mua bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/update_oct_2021/Phieu_yeu_cau_thay_doi_Nguoi_thu_huong_Oct2021.pdf">Yêu cầu thay đổi Người thụ hưởng</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a></a><a href="/content/dam/vn/vi/form-library/updated-june2021/POS06_Thong-bao-di-nuoc-ngoai_v1_042019.pdf">Thông báo về việc Bên mua bảo hiểm hoặc Người được bảo hiểm đi nước ngoài</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a></a><a href="/content/dam/vn/vi/form-library/updated-june2021/POS07_Dang-ky-chu-ky-va-tiep-tuc-tham-gia-bh_v1_042019.pdf">Xác nhận thông tin trên Hồ sơ yêu cầu bảo hiểm và đồng ý tiếp tục tham gia bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a></a><a href="/content/dam/vn/vi/form-library/update-2019/POS08_201904-V1%20-%20Yeu%20cau%20cap%20lai%20pho%20ban%20H%C4%90BH.PDF">Yêu cầu cấp bản sao Hợp đồng bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/updated-june2021/POS_PYC-dang-ky-chu-ky-mau-danh-cho-RST.pdf">Phiếu yêu cầu đăng ký chữ ký mẫu</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/update-2019/KSK01_201904 - V1 - To khai suc khoe.pdf">Cập nhật thông tin sức khỏe của Người được bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a href="/content/dam/vn/vi/form-library/Thoa-thuan-dai-dien-thua-ke.pdf" target="_blank">Thỏa thuận chỉ định Bên mua bảo hiểm mới khi Bên mua bảo hiểm qua đời</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/updated_21august2019/POS11 - 20082019 - PYC khac.pdf">Các yêu cầu khác</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="homeloan" data-id="cards" class="row tab-pane fade in card-row margin-bottom-xxl  ">
+                        <div class="grid-control-1-col section">
+                            <div class="row ">
+                                <div class="col col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0 ">
+                                    <div>
+                                        <div class="text parbase section">
+
+
+                                            <div class="aia-text  text-left p4 bt3 margin-top-md-l margin-bottom-md-l margin-top-sm-l margin-bottom-sm-l margin-top-m margin-bottom-l" data-emptytext="Text">
+                                                <p style="text-align: justify;">Khi có yêu cầu thanh toán quyền lợi hợp đồng bảo hiểm, ví dụ như tiền mặt định kỳ, tạm ứng/rút tiền từ giá trị hợp đồng, đáo hạn..., Quý khách có thể chọn một trong những phương thức dưới đây:</p>
+                                                <ol>
+                                                    <li style="text-align: justify;"><b>Gửi yêu cầu trực tuyến</b>: thông qua <b><i><a href="/vi/MyAIA.html">MyAIA - Bảo hiểm của tôi</a>&nbsp;</i></b>(đối với những khách hàng đã đăng ký thực hiện giao dịch điện tử của AIA Việt Nam)</li>
+                                                    <li style="text-align: justify;">
+                                                        <b>Chọn mẫu biểu phù hợp</b> tại mục Mẫu biểu, điền đầy đủ thông tin và gửi về AIA Việt Nam bằng cách:
+                                                        <ul>
+                                                            <li style="text-align: justify;">Thông qua đại lý phục vụ hợp đồng bảo hiểm của Quý khách; hoặc</li>
+                                                            <li style="text-align: justify;">Nộp trực tiếp tại bất kỳ Văn phòng nào của AIA Việt Nam tại các tỉnh/thành trên cả nước; hoặc</li>
+                                                            <li style="text-align: justify;">Gửi thư về: AIA Việt Nam - Trung Tâm Xử Lý Nghiệp Vụ - Tầng trệt,&nbsp; Tòa nhà Thủy Lợi 4,&nbsp; 205 Nguyễn Xí, Phường 26, Quận Bình Thạnh, TP.HCM.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                                <p style="text-align: justify;">Quý khách cũng có thể liên hệ với AIA Việt Nam theo số điện thoại 028 3812 2777, hoặc email: vn.customer@aia.com để được hướng dẫn chi tiết.</p>
+
+
+
+
+
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row margin-top-md-3xl margin-top-sm-3xl margin-top-3xl">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/sept2020/POS03A_PYC-nhan-QLBH_14092020.pdf">Phiếu yêu cầu nhận quyền lợi hợp đồng bảo hiểm</a>&nbsp;(tiền mặt định kỳ, tạm ứng/rút tiền từ giá trị hợp đồng, đáo hạn...)</p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row margin-top-md-3xl margin-top-sm-3xl margin-top-3xl">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/update-2019/POS03B_201904-V2 - PYC huy bo HĐBH.PDF" target="_blank">Phiếu yêu cầu chấm dứt hợp đồng bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/update-2019/GUQ01_201904-V1 - Giay uy quyen nhan tien.pdf" target="_blank">Giấy ủy quyền nhận tiền</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="requests" data-id="cards" class="row tab-pane fade in card-row margin-bottom-xxl  ">
+                        <div class="grid-control-1-col section">
+                            <div class="row ">
+                                <div class="col col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0 ">
+                                    <div>
+                                        <div class="text parbase section">
+
+
+                                            <div class="aia-text  text-left p4 bt3 margin-top-md-l margin-bottom-md-l margin-top-sm-l margin-bottom-sm-l margin-top-m margin-bottom-l" data-emptytext="Text">
+                                                <p style="text-align: justify;">Khi có yêu cầu giải quyết quyền lợi bảo hiểm, Quý khách có thể chọn một trong những phương thức dưới đây:</p>
+                                                <ol>
+                                                    <li style="text-align: justify;"><b>Gửi yêu cầu trực tuyến</b>: thông qua&nbsp;<b><i><a href="/vi/MyAIA.html">MyAIA - Bảo hiểm của tôi</a>&nbsp;</i></b>(đối với những khách hàng đã đăng ký thực hiện giao dịch điện tử của AIA Việt Nam)</li>
+                                                    <li style="text-align: justify;">
+                                                        <b>Hoàn tất các chứng từ cần nộp</b> theo yêu cầu và gửi về AIA Việt Nam bằng cách:
+                                                        <ul>
+                                                            <li style="text-align: justify;">Thông qua đại lý phục vụ hợp đồng bảo hiểm của Quý khách; hoặc</li>
+                                                            <li style="text-align: justify;">Nộp trực tiếp tại bất kỳ Văn phòng nào của AIA Việt Nam tại các tỉnh/thành trên cả nước; hoặc</li>
+                                                            <li style="text-align: justify;">Gửi thư về: AIA Việt Nam - Trung Tâm Xử Lý Nghiệp Vụ - Tầng trệt,&nbsp; Tòa nhà Thủy Lợi 4,&nbsp; 205 Nguyễn Xí, Phường 26, Quận Bình Thạnh, TP.HCM.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                                <p style="text-align: justify;">Quý khách cũng có thể liên hệ với AIA Việt Nam theo số điện thoại 028 3812 2777, hoặc email: vn.customer@aia.com để được hướng dẫn chi tiết.</p>
+                                                <p>&nbsp;</p>
+
+
+
+
+
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row margin-top-md-l margin-top-sm-l margin-top-m">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/updated-august2021/Claim-form-25Aug2021.pdf">Yêu cầu giải quyết quyền lợi bảo hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a href="/content/dam/vn/vi/form-library/updated-august2021/Claim-form-Health-care-25Aug2021.pdf">Yêu cầu giải quyết quyền lợi dành cho sản phẩm Bảo hiểm chăm sóc sức khỏe</a> (ngoại trú, nội trú)-Insmart</p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p style="text-align: justify;"><a href="/content/dam/vn/vi/form-library/Thoa-thuan-dai-dien-thua-ke.pdf" target="_blank">Thỏa thuận chỉ định đại diện thừa kế khi Bên mua bảo hiểm qua đời</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a href="/content/dam/vn/vi/form-library/updated-feb-2020/UQ Thu Thap Thong tin 2020.pdf" target="_blank">Giấy ủy quyền thu thập thông tin</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="requestform" data-id="cards" class="row tab-pane fade in card-row margin-bottom-xxl  ">
+                        <div class="grid-control-1-col section">
+                            <div class="row ">
+                                <div class="col col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0 ">
+                                    <div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/mau-ho-so-2021-oct/Ho_so_yeu_cau_BH_V02.2021PF_watermark.pdf" target="_blank">Mẫu Hồ Sơ Yêu Cầu Bảo Hiểm Chuẩn</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/mau-ho-so-2021-oct/Ho_so_yeu_cau_BH_V01.2021PS_watermark.pdf" target="_blank">Mẫu Hồ Sơ Yêu Cầu Bảo Hiểm Đơn Giản</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-control-2-col section">
+                                            <div class="row ">
+                                                <div class="col col-md-2 col-sm-2 col-xs-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 ">
+                                                    <div>
+                                                        <div class="icon section">
+                                                            <div style="text-align:left;">
+                                                                <svg class="icon icon-s hide-on-fallback " role="img"><g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use><image class="icon icon-s " src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="null" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image></g></svg>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-9 col-sm-9 col-xs-7 no-padding-md no-padding-sm no-padding-xs">
+                                                    <div>
+                                                        <div class="text parbase section">
+
+
+                                                            <div class="aia-text    p4 bt3 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l" data-emptytext="Text">
+                                                                <p><a target="_blank"></a><a href="/content/dam/vn/vi/form-library/update-2019/UI01_201904-V1 - Phieu yeu cau huy HSYCBH.PDF" target="_blank">Yêu Cầu Hủy Hồ Sơ Yêu Cầu Bảo Hiểm</a></p>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div><!--/.service-details-->
+    </div><!--/.container-->
+
+</section><!--/.service-->
+<!--service end-->
+<!-- new-project start -->
+<section class="new-project">
+    <div class="container">
+        <div class="new-project-details">
+            <div class="row">
+                <div class="col-md-10 col-sm-8">
+                    <div class="single-new-project">
+                        <h3>
+                            Want to get online quotation from us? Let’s Start!
+                        </h3>
+                    </div><!-- /.single-new-project-->
+                </div><!-- /.col-->
+                <div class="col-md-2 col-sm-4">
+                    <div class="single-new-project">
+                        <a href="name-and-contact.html" class="slide-btn">
+                            start now
+                        </a>
+                    </div><!-- /.single-new-project-->
+                </div><!-- /.col-->
+            </div><!-- /.row-->
+        </div><!-- /.new-project-details-->
+    </div><!-- /.container-->
+
+</section><!-- /.new-project-->
+<!-- new-project end -->

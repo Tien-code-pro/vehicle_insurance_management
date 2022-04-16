@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Name_and_contact";
+    Layout = "~/Views/Shared/_myLayout01.cshtml";
+}
+
+<div style="text-align: center;">
+    <img style="margin: 20px;" src="https://bao-hiem-o-to.libertyinsurance.com.vn/assets/lvn/libertysales/assets/images/liberty/libertyIreland-name.svg" alt="">
+    <h2>What is your name and contact information?</h2>
+    <form id="frm1" method="post" action="xulydangky.php">
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="hovaten" placeholder="Full name (Ex: Adam Smith)" />
+        </p>
+        <i id="name_exactly" style="display: none; color: red">Please, input your full name exactly</i>
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="sodienthoai" placeholder="Phone number (10 numbers Ex: 0123456789)" />
+        </p>
+        <i id="sodienthoai_exactly" style="display: none; color: red">Please, input your phone number exactly</i>
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="email" placeholder="Email (Ex: adam@example.com)" />
+        </p>
+        <i id="email_exactly" style="display: none; color: red">Please, input your email exactly</i>
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="diachi" placeholder="Address (Ex: Number 1, Nguyen Trai, Thanh Xuan, Ha Noi" />
+        </p>
+        <i id="diachi_exactly" style="display: none; color: red">Please, input your address exactly</i>
+        <br>
+        <p style=" margin: 20px; display: inline-block; width: 600px; height: 70px; background-color: rgb(240, 224, 224); justify-content: center;" type="text" id="">
+            We will use this email address to send you a quote for your reference. If you choose to purchase insurance, we will use this email address to send you policy related documents. You can change your email address later.
+        </p>
+        <p>
+            <button onclick="formvalidate1()" type="button" class="project-view" style="margin-bottom: 5px; margin-top: 20px">Submit</button>
+        </p>
+    </form>
+</div>
+

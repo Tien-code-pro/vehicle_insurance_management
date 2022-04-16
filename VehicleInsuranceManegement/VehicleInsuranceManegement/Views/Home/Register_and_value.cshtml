@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Register_and_value";
+    Layout = "~/Views/Shared/_myLayout01.cshtml";
+}
+
+<div style="text-align: center;">
+		<img style="margin: 20px;" src="https://bao-hiem-o-to.libertyinsurance.com.vn/assets/lvn/libertysales/assets/images/liberty/libertyIreland-car.svg" alt="">
+		<h2>Please input some more information below</h2>
+		<form id="frm2" method="post" action="xulydangky.php">
+			<p>
+				<input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="city-of-registration" placeholder="City of registration(Ex: Hanoi)" />
+			</p>
+			<i id="city-of-registration_exactly" style="display: none; color: red">Please, input city of registration exactly</i>
+			<p>
+				<input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="month-of-first-registration" placeholder="Month of first registration (From 1 to 12)" />
+			</p>
+			<i id="month-of-first-registration_exactly" style="display: none; color: red">Not valid, input again!</i>
+            <p>
+				<input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="year-of-first-registration" placeholder="Year of first registration (From 2000 to 2022)" />
+			</p>
+			<i id="year-of-first-registration_exactly" style="display: none; color: red">Not valid, input again!</i>
+			<p>
+				<input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="estimate-current-value" placeholder="Estimate current value (triệu vnd) (Ex: 500)" />
+			</p>
+			<i id="estimate-current-value_exactly" style="display: none; color: red">Not valid, input again!</i>
+			<p>
+				<button onclick="formvalidate3()" type="button" class="project-view" style="margin-bottom: 5px; margin-top: 20px">Submit</button>
+			</p>
+			<div class="table-register">
+			<table border="2" style="margin-top: 30px; margin-bottom: 30px; width: 500px">
+				<tr>
+					<th style="text-align: center;">
+						3 months
+						<br>
+						(million vnd)
+					</th>
+					<th style="text-align: center;">
+						6 months
+						<br>
+						(million vnd)
+					</th>
+					<th style="text-align: center;">
+						9 months
+						<br>
+						(million vnd)
+					</th>
+					<th style="text-align: center;">
+						12 months
+						<br>
+						(million vnd)
+					</th>
+				</tr>
+			
+				<tr border="2">
+					<td id="3months"></td>
+					<td id="6months"></td>
+					<td id="9months"></td>
+					<td id="12months"></td>
+				</tr>
+		</table>
+			</div>
+		<i id="all-fields_exactly" style="display: none; color: red">Please, input all fields exactly in advance</i>
+		<p>
+			<button onclick="getquotation()" type="button" class="project-view" style="margin-bottom: 20px">Click for quotation</button>
+		</p>
+		</form>
+		</div>
+

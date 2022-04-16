@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Car_of_information";
+    Layout = "~/Views/Shared/_myLayout01.cshtml";
+}
+
+<div style="text-align: center;">
+    <img style="margin: 20px;" src="https://bao-hiem-o-to.libertyinsurance.com.vn/assets/lvn/libertysales/assets/images/liberty/libertyIreland-car.svg" alt="">
+    <h2>Please input your vehicle details below</h2>
+    <form id="frm1" method="post" action="xulydangky.php">
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="year-of-manufacture" placeholder="Year of manufacturer (Ex: 2020)" />
+        </p>
+        <i id="year-of-manufacture_exactly" style="display: none; color: red">Please, input year of manufacture exactly</i>
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="automaker" placeholder="Automaker (Ex: Audi)" />
+        </p>
+        <i id="automaker_exactly" style="display: none; color: red">Please, input automaker exactly</i>
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="car-brand" placeholder="Car brand (Ex: A3)" />
+        </p>
+        <i id="car-brand_exactly" style="display: none; color: red">Please, input car brand exactly</i>
+        <p>
+            <input style="margin-top: 20px; width: 600px; height: 40px;" type="text" id="type-of-car" placeholder="Type of car(Ex: A3.1.6" />
+        </p>
+        <i id="type-of-car_exactly" style="display: none; color: red">Please, input type of car exactly</i>
+        <br>
+        <p>
+            <button onclick="formvalidate2()" type="button" class="project-view" style="margin-bottom: 20px">Continue</button>
+        </p>
+    </form>
+</div>
+

@@ -1,0 +1,900 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_myLayout01.cshtml";
+}
+<!-- header-slider-area start -->
+<section class="header-slider-area">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="single-slide-item slide-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="single-slide-item-content">
+                                    <h2>Consult Your <br> Auto Insurance With Us</h2>
+                                    <p>
+                                        We are your auto insurance and consulting company, ready to challenge and eliminate your car problems.
+                                    </p>
+                                    <button type="button" class="slide-btn">
+                                        get started
+                                    </button>
+                                    <button type="button" class="slide-btn">
+                                        explore more
+                                    </button>
+
+                                </div><!-- /.single-slide-item-content-->
+                            </div><!-- /.col-->
+                        </div><!-- /.row-->
+                    </div><!-- /.container-->
+                </div><!-- /.single-slide-item-->
+            </div><!-- /.item .active-->
+            <div class="item">
+                <div class="single-slide-item slide-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="single-slide-item-content">
+                                    <h2>
+                                        Consult Your <br> Auto Insurance With Us
+                                    </h2>
+                                    <p>
+                                        We are your auto insurance and consulting company, ready to challenge and eliminate your car problems.
+                                    </p>
+                                    <button type="button" class="slide-btn">
+                                        get started
+                                    </button>
+                                    <button type="button" class="slide-btn
+											">
+                                        explore more
+                                    </button>
+                                </div><!-- /.single-slide-item-content-->
+
+                            </div><!-- /.col-->
+                        </div><!-- /.row-->
+                    </div><!-- /.container-->
+                </div><!-- /.single-slide-item-->
+            </div><!-- /.item .active-->
+        </div><!-- /.carousel-inner-->
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="lnr lnr-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="lnr lnr-chevron-right"></span>
+        </a>
+    </div><!-- /.carousel-->
+
+</section><!-- /.header-slider-area-->
+<!-- header-slider-area end -->
+<!--we-do start -->
+<section class="we-do">
+    <div class="container">
+        <div class="we-do-details">
+            <div class="section-header text-center">
+                <h2>what we do</h2>
+                <p>
+                    With over 20 years of experience in the auto insurance industry, we have served millions of customers at Vietnam and we are confident that they will be satisfied with the service we are providing.
+                </p>
+            </div><!--/.section-header-->
+            <div class="we-do-carousel">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img style="width: 60px; height: 60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_LwaufBIPL1xZS_16amLYdUaNWhVPVLOFSQ&usqp=CAU" alt="image of consultency" />
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Auto Insurance Consultancy
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        The essence when participating in auto insurance is that you are paying for risks that may occur in the future at the present time. In the event of an accident, the insurance company will compensate you for financial loss according to the terms of the policy.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img style="width: 60px; height: 60px" src="data:image/webp;base64,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" alt="image of business" />
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Online Quote
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        All commonly asked questions about insurance costs such as: how much is car insurance, how much is car physical insurance, how much is compulsory insurance? Almost all costs are will be Online quotation through company website.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img style="width: 60px; height: 60px" src="data:image/webp;base64,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" alt="image of support" />
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Sign The Contract
+                                            </a>
+
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        The auto insurance policy is part of a set of auto insurance documents. In addition, ZomBiz will issue an additional Certificate of Insurance, attached insurance rules, invoices and vouchers for payment of auto insurance premiums.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.we-do-carousel-->
+        </div><!--/.we-do-details-->
+    </div><!--/.container-->
+
+</section><!--/.we-do-->
+<!--we-do end-->
+<!--about-us start -->
+<section class="about-us">
+    <div class="container">
+        <div class="about-us-content">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single-about-us">
+                        <div class="about-us-txt">
+                            <h2>about us</h2>
+                            <p>
+                                ZomBiz Auto Insurance, proud in the list of leading auto insurance companies in Vietnam. Established in early 2000, ZomBiz Vietnam Auto Insurance continues, promotes and brings global standard insurance products and services to ensure the safety of Vietnamese cars and people.
+                            </p>
+                            <div class="project-btn">
+                                <a href="#" class="project-view">
+                                    learn more
+                                </a>
+                            </div><!--/.project-btn-->
+                        </div><!--/.about-us-txt-->
+                    </div><!--/.single-about-us-->
+                </div><!--/.col-->
+                <div class="col-sm-6">
+                    <div class="single-about-us">
+                        <div class="about-us-img">
+                            <img src="~/assets/images/about/about-part.jpg" alt="about images">
+                        </div><!--/.about-us-img-->
+                    </div><!--/.single-about-us-->
+                </div><!--/.col-->
+            </div><!--/.row-->
+        </div><!--/.about-us-content-->
+    </div><!--/.container-->
+
+</section><!--/.about-us-->
+<!--about-us end -->
+<!--service start-->
+<section class="service">
+    <div class="container">
+        <div class="service-details">
+            <div class="section-header text-center">
+                <h2>Our services</h2>
+                <p>
+                    We are ready to assist you.
+                </p>
+            </div><!--/.section-header-->
+            <div class="service-content-one">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="customer-care-program.html">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="~/assets/images/service/service1.png" alt="image of service" />
+                                </div><!--/.service-img-->
+                                <br>
+                                <div class="service-txt">
+                                    <h2>
+                                        Civil Liability Insurance
+                                    </h2>
+                                    <br>
+                                    <p>
+                                        Information about ZomBiz Vietnam's customer care programs
+                                    </p>
+                                    <br>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </a>
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="#">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="~/assets/images/service/service2.png" alt="image of service" />
+                                </div><!--/.service-img-->
+                                <br>
+                                <div class="service-txt">
+                                    <h2>
+                                        Material Protection ZomBiz
+
+                                    </h2>
+                                    <br>
+                                    <p>
+                                        Introducing premium payment channels
+                                    </p>
+                                    <br />
+
+
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </a>
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="#">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="~/assets/images/service/service3.png" alt="image of service" />
+                                    <br>
+                                </div><!--/.service-img-->
+                                <br>
+                                <div class="service-txt">
+                                    <h2>
+                                        Interest rate and unit prive of funds
+                                    </h2>
+                                    <br>
+
+
+                                    <p>Common forms related to adjustment of policy information and claims for insurance benefits</p>
+
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </a>
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-one-->
+            <div class="service-content-two">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="#">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="~/assets/images/service/service4.png" alt="image of service" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Insurance benefits settlement service</a>
+                                    </h2>
+                                    <br>
+                                    <p>General introduction of insurance benefit settlement service</p>
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </a>
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="#">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="~/assets/images/service/service5.png" alt="image of service" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">Guide to procedures for settlement of insurance benefits</a>
+                                    </h2>
+                                    <p>Documents to be submitted when claiming benefits<p>
+
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </a>
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="#">
+                            <div class="service-single text-center">
+                                <div class="service-img">
+                                    <img src="~/assets/images/service/service6.png" alt="image of service" />
+                                </div><!--/.service-img-->
+                                <div class="service-txt">
+                                    <h2>
+                                        <a href="#">24/7 support service's ZomBiz</a>
+                                    </h2>
+                                    <br />
+
+                                    <p>Agents are always ready to solve problems for customers</p>
+                                    <a href="#" class="service-btn">
+                                    </a>
+                                    <br />
+                                </div><!--/.service-txt-->
+                            </div><!--/.service-single-->
+                        </a>
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.service-content-two-->
+        </div><!--/.service-details-->
+    </div><!--/.container-->
+
+</section><!--/.service-->
+<!--service end-->
+<!--statistics start-->
+<section class="statistics">
+    <div class="container">
+        <div class="statistics-counter ">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-ststistics-box">
+                    <div class="statistics-img">
+                        <img src="~/assets/images/counter/counter1.png" alt="counter-icon" />
+                    </div><!--/.statistics-img-->
+                    <div class="statistics-content">
+                        <div class="counter">2556</div>
+                        <h3>days worked</h3>
+                    </div><!--/.statistics-content-->
+                </div><!--/.single-ststistics-box-->
+            </div><!--/.col-->
+            <div class="col-md-3 col-sm-6">
+                <div class="single-ststistics-box">
+                    <div class="statistics-img">
+                        <img src="~/assets/images/counter/counter2.png" alt="counter-icon" />
+                    </div><!--/.statistics-img-->
+                    <div class="statistics-content">
+                        <div class="counter">326</div>
+                        <h3>project finished</h3>
+                    </div><!--/.statistics-content-->
+                </div><!--/.single-ststistics-box-->
+            </div><!--/.col-->
+            <div class="col-md-3 col-sm-6">
+                <div class="single-ststistics-box">
+                    <div class="statistics-img">
+                        <img src="~/assets/images/counter/counter3.png" alt="counter-icon" />
+                    </div><!--/.statistics-img-->
+                    <div class="statistics-content">
+                        <div class="counter">1526</div>
+                        <h3>coffee cup</h3>
+                    </div><!--/.statistics-content-->
+                </div><!--/.single-ststistics-box-->
+            </div><!--/.col-->
+            <div class="col-md-3 col-sm-6">
+                <div class="single-ststistics-box">
+                    <div class="statistics-img">
+                        <img src="~/assets/images/counter/counter4.png" alt="counter-icon" />
+                    </div><!--/.statistics-img-->
+                    <div class="statistics-content">
+                        <div class="counter">856</div>
+                        <h3>client satisfied</h3>
+                    </div><!--/.statistics-content-->
+                </div><!--/.single-ststistics-box-->
+            </div><!--/.col-->
+        </div><!--/.statistics-counter-->
+    </div><!--/.container-->
+
+</section><!--/.statistics-->
+<!--statistics end-->
+<!--team start -->
+<section style="margin-top: 100px;" class="team">
+    <div class="container">
+        <div class="team-details">
+            <div class="project-header team-header text-left">
+                <h2>Our expert team</h2>
+                <p>
+                    Pallamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div><!--/.project-header-->
+            <div class="team-card">
+                <div class="container">
+                    <div class="row">
+                        <div class="owl-carousel  team-carousel">
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="single-team-box team-box-bg-1">
+                                    <div class="team-box-inner">
+                                        <h3>tom hanks</h3>
+                                        <p class="team-meta">Founder &  CEO</p>
+                                        <a href="team.html" class="learn-btn">
+                                            learn more
+                                        </a>
+                                    </div><!--/.team-box-inner-->
+
+                                </div><!--/.single-team-box-->
+                            </div><!--.col-->
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="single-team-box team-box-bg-2">
+                                    <div class="team-box-inner">
+                                        <h3>alex browne</h3>
+                                        <p class="team-meta">
+                                            Director, Management & Research
+                                        </p>
+                                        <a href="team.html" class="learn-btn">
+                                            learn more
+                                        </a>
+                                    </div><!--/.team-box-inner-->
+                                </div><!--/.single-team-box-->
+                            </div><!--.col-->
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="single-team-box team-box-bg-3">
+                                    <div class="team-box-inner">
+                                        <h3>darren j. stevens</h3>
+                                        <p class="team-meta">
+                                            Director, Finance Solution
+                                        </p>
+                                        <a href="team.html" class="learn-btn">
+                                            learn more
+                                        </a>
+                                    </div><!--/.team-box-inner-->
+                                </div><!--/.single-team-box-->
+                            </div><!--.col-->
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="single-team-box team-box-bg-4">
+                                    <div class="team-box-inner">
+                                        <h3>kevin thomson</h3>
+                                        <p class="team-meta">
+                                            Head, Legal Advising
+                                        </p>
+                                        <a href="team.html" class="learn-btn">
+                                            learn more
+                                        </a>
+                                    </div><!--/.team-box-inner-->
+                                </div><!--/.single-team-box-->
+                            </div><!--.col-->
+                        </div><!--/.team-carousel-->
+                    </div><!--/.row-->
+                </div><!--/.container-->
+            </div><!--/.team-card-->
+        </div><!--/.team-details-->
+    </div><!--/.container-->
+
+</section><!--/.team-->
+<!--team end-->
+<!--pricing start -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="pricing-details">
+            <div class="section-header text-center">
+                <h2 class="price-head">our pricing table</h2>
+                <p>
+                    Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div><!--/.section-header-->
+            <div class="pricing-content">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricing-box">
+                            <div class="pricing-header">
+                                <h2>basic</h2>
+                                <h3 class="packeg_p"><span>$</span>99</h3>
+                                <p>monthly</p>
+                            </div><!--/.pricing-header-->
+                            <ul class="plan-lists">
+                                <li>01 user</li>
+                                <li>01 project</li>
+                                <li>01 advisor team</li>
+                                <li>complete statistics</li>
+                                <li>E-Mail support</li>
+                            </ul><!--/ul-->
+
+                            <div class="project-btn pricing-btn text-center">
+                                <a href="name-and-contact.html" class="project-view">
+                                    Sign Up Now
+                                </a>
+                            </div><!--/.project-btn-->
+                        </div><!--/.pricing-box-->
+                    </div><!--/.col-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricing-box">
+                            <div class="pricing-header">
+                                <h2>standard</h2>
+                                <h3 class="packeg_p"><span>$</span>299</h3>
+                                <p>monthly</p>
+                            </div><!--/.pricing-header-->
+                            <ul class="plan-lists">
+                                <li>05 user</li>
+                                <li>05 project</li>
+                                <li>05 advisor team</li>
+                                <li>complete statistics</li>
+                                <li>full support</li>
+                            </ul><!--/ul-->
+
+                            <div class="project-btn pricing-btn text-center">
+                                <a href="name-and-contact.html" class="project-view">
+                                    Sign Up Now
+                                </a>
+                            </div><!--/.project-btn-->
+                        </div><!--/.pricing-box-->
+                    </div><!--/.col-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricing-box">
+                            <div class="pricing-header">
+                                <h2>advanced</h2>
+                                <h3 class="packeg_p"><span>$</span>499</h3>
+                                <p>monthly</p>
+                            </div><!--/.pricing-header-->
+                            <ul class="plan-lists">
+                                <li>10 user</li>
+                                <li>10 project</li>
+                                <li>10 advisor team</li>
+                                <li>complete statistics</li>
+                                <li>full support</li>
+                            </ul><!--/ul-->
+
+                            <div class="project-btn pricing-btn text-center">
+                                <a href="name-and-contact.html" class="project-view">
+                                    Sign Up Now
+                                </a>
+                            </div><!--/.project-btn-->
+                        </div><!--/.pricing-box-->
+                    </div><!--/.col-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricing-box">
+                            <div class="pricing-header">
+                                <h2>unlimited</h2>
+                                <h3 class="packeg_p"><span>$</span>1099</h3>
+                                <p>monthly</p>
+                            </div><!--/.pricing-header-->
+                            <ul class="plan-lists">
+                                <li>unlimited user</li>
+                                <li>unlimited project</li>
+                                <li>unlimited advisor team</li>
+                                <li>complete statistics</li>
+                                <li>full support</li>
+                            </ul><!--/ul-->
+
+                            <div class="project-btn pricing-btn text-center">
+                                <a href="name-and-contact.html" class="project-view">
+                                    Sign Up Now
+                                </a>
+                            </div><!--/.project-btn-->
+                        </div><!--/.pricing-box-->
+                    </div><!--/.col-->
+
+                </div><!--/.row-->
+            </div><!--/.pricing-content-->
+        </div><!--/.pricing-details-->
+    </div><!--/.container-->
+
+</section><!--/.pricing-->
+<!--pricing end-->
+<!-- testemonial Start -->
+<section class="testemonial">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>
+                <span>
+                    what our client say about us
+                </span>
+            </h2>
+        </div><!--/.section-header-->
+        <div class="owl-carousel owl-theme" id="testemonial-carousel">
+            <div class="home1-testm item">
+                <div class="home1-testm-single text-center">
+                    <div class="home1-testm-img">
+                        <img src="~/assets/images/client/testimonial1.jpg" alt="img" />
+                    </div><!--/.home1-testm-img-->
+                    <div class="home1-testm-txt">
+                        <span class="icon section-icon">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+                        </p>
+                        <h3>
+                            <a href="#">
+                                kevin watson
+                            </a>
+                        </h3>
+                        <h4>CEO, Kingston</h4>
+                    </div><!--/.home1-testm-txt-->
+                </div><!--/.home1-testm-single-->
+            </div><!--/.item-->
+            <div class="home1-testm item">
+                <div class="home1-testm-single text-center">
+                    <div class="~/home1-testm-img">
+                        <img src="~/assets/images/client/testimonial2.jpg" alt="img" />
+                    </div><!--/.home1-testm-img-->
+                    <div class="home1-testm-txt">
+                        <span class="icon section-icon">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+                        </p>
+                        <h3>
+                            <a href="#">
+                                kevin watson
+                            </a>
+                        </h3>
+                        <h4>CEO, Kingston</h4>
+                    </div><!--/.home1-testm-txt-->
+                </div><!--/.home1-testm-single-->
+            </div><!--/.item-->
+            <div class="home1-testm item">
+                <div class="home1-testm-single text-center">
+                    <div class="home1-testm-img">
+                        <img src="~/assets/images/client/testimonial1.jpg" alt="img" />
+                    </div><!--/.home1-testm-img-->
+                    <div class="home1-testm-txt">
+                        <span class="icon section-icon">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+                        </p>
+                        <h3>
+                            <a href="#">
+                                kevin watson
+                            </a>
+                        </h3>
+                        <h4>CEO, Kingston</h4>
+                    </div><!--/.home1-testm-txt-->
+                </div><!--/.home1-testm-single-->
+            </div><!--/.item-->
+        </div><!--/.testemonial-carousel-->
+    </div><!--/.container-->
+
+</section><!--/.testimonial-->
+<!-- testemonial End -->
+<!--clients start-->
+<section class="clients">
+    <div class="container">
+        <div class="clients-area">
+            <div class="owl-carousel owl-theme" id="client">
+                <div class="item">
+                    <a href="#">
+                        <img src="~/assets/images/client/client1.png" alt="brand-image" />
+                    </a>
+                </div><!--/.item-->
+                <div class="item">
+                    <a href="#">
+                        <img src="~/assets/images/client/client2.png" alt="brand-image" />
+                    </a>
+                </div><!--/.item-->
+                <div class="item">
+                    <a href="#">
+                        <img src="~/assets/images/client/client3.png" alt="brand-image" />
+                    </a>
+                </div><!--/.item-->
+                <div class="item">
+                    <a href="#">
+                        <img src="~/assets/images/client/client4.png" alt="brand-image" />
+                    </a>
+                </div><!--/.item-->
+                <div class="item">
+                    <a href="#">
+                        <img src="~/assets/images/client/client5.png" alt="brand-image" />
+                    </a>
+                </div><!--/.item-->
+            </div><!--/.owl-carousel-->
+        </div><!--/.clients-area-->
+    </div><!--/.container-->
+
+</section><!--/.clients-->
+<!--clients end-->
+<!--nwes start -->
+<section class="news">
+    <div class="container">
+        <div class="news-details">
+            <div class="section-header text-center">
+                <h2>our latest news</h2>
+                <p>
+                    Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div><!--/.section-header-->
+            <div class="news-card news-card-pb-25">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-news-box">
+                            <div class="news-box-bg">
+                                <img src="~/assets/images/blog/bl1.jpg" alt="blog image">
+                                <div class="isotope-overlay">
+                                    <a href="blog_single.html">
+                                        <span class="lnr lnr-link"></span>
+
+                                    </a>
+                                </div>
+
+                            </div><!--/.team-box-bg-->
+                            <div class="news-box-inner">
+                                <h3>
+                                    <a href="blog_single.html">
+                                        The Pros and Cons of Starting an Online Consulting Business
+                                    </a>
+                                </h3>
+                                <p class="news-meta">
+                                    Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
+                                </p>
+                                <!-- <a href="#" class="learn-btn">
+                                    learn more
+                                </a> -->
+                            </div><!--/.news-box-inner-->
+                        </div><!--/.single-news-box-->
+                    </div><!--.col-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-news-box">
+                            <div class="news-box-bg">
+                                <img src="~/assets/images/blog/bl2.jpg" alt="blog image">
+                                <div class="isotope-overlay">
+                                    <a href="blog_single.html">
+                                        <span class="lnr lnr-link"></span>
+
+                                    </a>
+                                </div>
+
+                            </div><!--/.team-box-bg-->
+                            <div class="news-box-inner">
+                                <h3>
+                                    <a href="blog_single.html">
+                                        8 Secrets for Your successful Business Mentor Won't Tell You
+                                    </a>
+                                </h3>
+                                <p class="news-meta">
+                                    Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
+                                </p>
+                                <!-- <a href="#" class="learn-btn">
+                                    learn more
+                                </a> -->
+                            </div><!--/.news-box-inner-->
+                        </div><!--/.single-news-box-->
+                    </div><!--.col-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-news-box">
+                            <div class="news-box-bg">
+                                <img src="~/assets/images/blog/bl3.jpg" alt="blog image">
+                                <div class="isotope-overlay">
+                                    <a href="blog_single.html">
+                                        <span class="lnr lnr-link"></span>
+
+                                    </a>
+                                </div>
+
+                            </div><!--/.team-box-bg-->
+                            <div class="news-box-inner">
+                                <h3>
+                                    <a href="blog_single.html">
+                                        Hire a Branding Consultant With a Similar Aesthetic to Your Own
+                                    </a>
+                                </h3>
+                                <p class="news-meta">
+                                    Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
+                                </p>
+                                <!-- <a href="#" class="learn-btn">
+                                    learn more
+                                </a> -->
+                            </div><!--/.news-box-inner-->
+                        </div><!--/.single-news-box-->
+                    </div><!--.col-->
+                </div><!--/.row-->
+                <div class="project-btn text-center">
+                    <a href="blog.html" class="project-view">
+                        read more
+                    </a>
+                </div><!--/.project-btn-->
+            </div><!--/.news-card-->
+
+        </div><!--/news-details-->
+    </div><!--/.container-->
+
+</section><!--/news-->
+<!--news end-->
+<!--contact start-->
+<section class="contact">
+    <div class="container">
+        <div class="contact-details">
+            <div class="section-header contact-head  text-center">
+                <h2>contact us</h2>
+                <p>
+                    Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div><!--/.section-header-->
+            <div class="contact-content">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-5">
+                        <div class="single-contact-box">
+                            <div class="contact-right">
+                                <div class="contact-adress">
+                                    <div class="contact-office-address">
+                                        <h3>contact info</h3>
+                                        <p>
+                                            125, Park street avenue, Brocklyn, Newyork.
+                                        </p>
+                                        <div class="contact-online-address">
+                                            <div class="single-online-address">
+                                                <i class="fa fa-phone"></i>
+                                                +11253678958
+                                            </div><!--/.single-online-address-->
+
+                                            <div class="single-online-address">
+                                                <i class="fa fa-envelope-o"></i>
+                                                <span>info@mail.com</span>
+                                            </div><!--/.single-online-address-->
+                                        </div><!--/.contact-online-address-->
+                                    </div><!--/.contact-office-address-->
+                                    <div class="contact-office-address">
+                                        <h3>social partner</h3>
+                                        <div class="contact-icon">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
+                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
+                                            </ul><!--/ul-->
+                                        </div><!--/.contact-icon-->
+                                    </div><!--/.contact-office-address-->
+
+                                </div><!--/.contact-address-->
+                            </div><!--/.contact-right-->
+                        </div><!--/.single-contact-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-5">
+                        <div class="single-contact-box">
+                            <div class="contact-form">
+                                <h3>Leave us a Massage Here</h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="laststname">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="7" id="comment" placeholder="Message"></textarea>
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="single-contact-btn pull-right">
+                                                <button class="contact-btn" type="button">send message</button>
+                                            </div><!--/.single-single-contact-btn-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                </form><!--/form-->
+                            </div><!--/.contact-form-->
+                        </div><!--/.single-contact-box-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.contact-content-->
+        </div><!--/.contact-details-->
+    </div><!--/.container-->
+
+</section><!--/.contact-->

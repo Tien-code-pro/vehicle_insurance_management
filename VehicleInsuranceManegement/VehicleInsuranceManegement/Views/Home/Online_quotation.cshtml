@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Online_quotation";
+    Layout = "~/Views/Shared/_myLayout01.cshtml";
+}
+<div style="text-align: center;">
+    <img style="margin: 20px;" src="https://bao-hiem-o-to.libertyinsurance.com.vn/assets/lvn/libertysales/assets/images/liberty/libertyIreland-name.svg" alt="">
+
+    <h2>Check out the price list below (triệu vnd)</h2>
+    <form id="frm1" method="post" action="xulydangky.php">
+        <table border="2" style="margin-top: 30px; margin-bottom: 30px; margin-left: 385px; width: 500px;">
+            <tr>
+                <th style="text-align: center;">
+                    3 months
+                    <br>
+                    (triệu vnd)
+                </th>
+                <th style="text-align: center;">6 months</th>
+                <th style="text-align: center;">9 months</th>
+                <th style="text-align: center;">12 months</th>
+            </tr>
+
+            <tr>
+                <td id="3months"></td>
+                <td id="6months"></td>
+                <td id="9months"></td>
+                <td id="12months"></td>
+            </tr>
+        </table>
+    </form>
+    <button onclick="getquotation()" type="button" class="project-view" style="margin-bottom: 5px; margin-top: 20px">Click For Quotation</button>
+
+</div>
+
